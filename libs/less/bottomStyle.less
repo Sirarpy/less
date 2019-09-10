@@ -1,0 +1,61 @@
+
+//////////////////////BOTTOM SECTION STYLE START////////////////////////////
+
+.bottom-info {
+  width: percentage(@width);
+  margin: 20px auto;
+  color: @blue2;
+
+
+  h2 {
+    font-size: @fontSize + @fontSize;
+    text-transform: uppercase;
+    margin: 50px auto;
+    @media @max500{
+      font-size: @fontSize * 3;
+    }
+  }
+
+  p {
+    margin: 20px auto;
+    width: percentage(@width - 0.3);
+    font-size: @fontSize - 0.1vw;
+    line-height: 30px;
+    @media @min768 {
+      width: percentage(@width - 0.1);
+      font-size: @fontSize + 0.5vw;
+      line-height: 25px;
+    }
+  }
+
+  button {
+    border: none;
+    width: percentage(@width)  - 65%;
+    background-color: @blue2;
+    color: @white;
+    font-size: @fontSize;
+    line-height: 40px;
+    cursor: pointer;
+    @media @min768 {
+      width: percentage(@width)  - 55%;
+      font-size: @fontSize + 0.3vw;
+    }
+
+  }
+
+  .button-pointer {
+    height: percentage(@width) + 20%;
+    width: percentage(@width) - 50%;
+    background-color: @blue1;
+    float: right;
+
+    i {
+      padding: 5px 8px;
+      .border();
+      .borderRad();
+    }
+  }
+}
+
+
+//////////////////////BOTTOM SECTION STYLE END//////////////////////////////
